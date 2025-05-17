@@ -78,20 +78,20 @@ export const projectsData = [
     { label: "Contact", link: "/contact", icon: "contact", newTab: false },
     {
       label: "Github",
-      link: "https://www.github.com/codebucks27",
+      link: "https://github.com/Anscom",
       icon: "github",
       newTab: true,
     },
     {
       label: "LinkedIn",
-      link: "https://www.linkedin.com/in/codebucks",
+      link: "https://www.linkedin.com/in/ooi-cheong-wen-347016224/",
       icon: "linkedin",
       newTab: true,
     },
     {
-      label: "X",
-      link: "https://www.x.com/code_bucks",
-      icon: "twitter",
+      label: "Old Portfolio",
+      link: "https://anscomportfolio.netlify.app/",
+      icon: "switchCamera",
       newTab: true,
     },
     {

@@ -2,6 +2,7 @@ import Image from "next/image";
 import bg from "../../public/home-background.jpg"
 import RenderModel from "../components/RenderModel";
 import MainCharacter from "../components/models/MainCharacter";
+import Navigation from "../components/navigation/index";
 
 export default function Home() {
     return (
@@ -9,6 +10,7 @@ export default function Home() {
             <Image src={bg} alt="background-image" fill className="w-full h-full object-cover object-center opacity-25" />
 
             <div className="w-full h-screen">
+                <Navigation />
                 <RenderModel>
                     <MainCharacter />
                 </RenderModel>
