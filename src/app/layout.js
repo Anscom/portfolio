@@ -1,6 +1,7 @@
 import { Roboto } from "next/font/google";
 import "./global.css";
 import clsx from "clsx";
+import FireFliesBackground from "../components/FireFliesBackground";
 
 
 const roboto = Roboto({
@@ -9,14 +10,24 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-    title: "Anscom Portfolio",
-    description: "amazing"
-}
+    title: {
+      template:
+        "Anscom Portfolio",
+      default:
+        "Anscom Portfolio",
+    },
+    description:
+    "amazing"
+};
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-            <body className={clsx(roboto.variable, "bg-background text-foreground")}>{children}</body>
+            <body className={clsx(roboto.variable, "bg-background text-foreground font-roboto")}>
+                {children}
+                <FireFliesBackground />
+                <div id="my-modal" />
+            </body>
         </html>
     )
 }
