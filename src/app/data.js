@@ -4,28 +4,28 @@ export const projectsData = [
       name: "Ecommerce With Spring Boot",
       description: "woohoo, its spring boot",
       date: "2025-01-01",
-      demoLink: "https://github.com/Anscom",
+      demoLink: "https://a-ecommerce.anscom-dev.com/",
     },
     {
       id: 2,
       name: "Ecommerce with MERN",
       description: "woohoo, its MERN",
       date: "2025-01-01",
-      demoLink: "https://github.com/Anscom",
+      demoLink: "https://b-ecommerce.anscom-dev.com/",
     },
     {
       id: 3,
       name: "Real Time Chat App",
       description: "What's your eta",
       date: "2025-01-01",
-      demoLink: "https://github.com/Anscom",
+      demoLink: "https://a-chatapp.anscom-dev.com/",
     },
     {
       id: 4,
       name: "Ecommerce With React and SQL",
       description: "Monitor heart rate zones",
       date: "2025-01-01",
-      demoLink: "https://github.com/Anscom",
+      demoLink: "https://c-ecommerce.anscom-dev.com/",
     }
   ];
   
