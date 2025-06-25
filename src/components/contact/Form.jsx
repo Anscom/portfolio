@@ -21,6 +21,16 @@ const item = {
   show: { scale: 1 },
 };
 
+const onSubmit = (data) => {
+  const subject = encodeURIComponent("Contact from website");
+  const body = encodeURIComponent(
+    `Name: ${data.name}\nEmail: ${data.email}\n\nMessage:\n${data.message}`
+  );
+
+  window.location.href = `mailto:your-email@example.com?subject=${subject}&body=${body}`;
+};
+
+
 export default function Form() {
   const {
     register,
@@ -72,16 +82,16 @@ export default function Form() {
     //   );
   };
 
-  const onSubmit = (data) => {
-    const templateParams = {
-      to_name: "Anscom",
-      from_name: data.name,
-      reply_to: data.email,
-      message: data.message,
-    };
+  // const onSubmit = (data) => {
+  //   const templateParams = {
+  //     to_name: "Anscom",
+  //     from_name: data.name,
+  //     reply_to: data.email,
+  //     message: data.message,
+  //   };
 
-    sendEmail(templateParams);
-  };
+  //   sendEmail(templateParams);
+  // };
 
   return (
     <>
